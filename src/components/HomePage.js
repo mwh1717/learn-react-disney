@@ -1,10 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import ImageSlider from './ImageSlider';
+import Viewers from './Viewers';
 
 function HomePage() {
 	return (
 		<HomeContainer>
-			HOME PAGE
+			<ImageSlider />
+			<Viewers />
 		</HomeContainer>
 	)
 }
@@ -13,7 +16,9 @@ export default HomePage
 
 const HomeContainer = styled.main`
 	min-height: calc(100vh - 70px);
+	padding: 0 calc(3vw + 5px);
 	position: relative;
+	overflow-x: hidden;
 	
 	&:before {
 		background: url("/images/home-background.png") center center / cover no-repeat fixed;
