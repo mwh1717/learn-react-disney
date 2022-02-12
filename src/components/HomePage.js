@@ -3,13 +3,16 @@ import styled from 'styled-components';
 import ImageSlider from './ImageSlider';
 import Viewers from './Viewers';
 import Movies from './Movies';
-import getMovies from '../firebase'
+import querySnapshot from '../firebase';
 
 function HomePage() {
 
-	useEffect(() => {
-		
-	}, []);
+	// useEffect(() => {
+	// 	querySnapshot.forEach((doc) => {
+	// 		// doc.data() is never undefined for query doc snapshots
+	// 		console.log(doc.id, " => ", doc.data());
+	// 	});
+	// }, []);
 
 	return (
 		<HomeContainer>
