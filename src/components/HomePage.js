@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import ImageSlider from './ImageSlider';
 import Viewers from './Viewers';
 import Movies from './Movies';
+import getMovies from '../firebase'
 
 function HomePage() {
+
+	useEffect(() => {
+		
+	}, []);
+
 	return (
 		<HomeContainer>
 			<ImageSlider />
