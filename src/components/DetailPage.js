@@ -26,6 +26,12 @@ function DetailPage() {
           <img src="/images/group-icon.png" />
         </GroupButton>
       </Controls>
+      <SubTitle>
+        This is filler text right now. Lorem ipsum dolor.
+      </SubTitle>
+      <Description>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis quis neque venenatis tempus. Sed efficitur mi quis vehicula dictum. Morbi gravida libero non maximus sollicitudin. Sed neque metus, hendrerit ac dolor quis, ullamcorper bibendum nisl. Etiam in accumsan odio. Cras ut rhoncus elit.
+      </Description>
     </DetailContainer>
   )
 }
@@ -60,6 +66,7 @@ const ImageTitle = styled.div`
   min-height: 170px;
   width: 35vh;
   min-width: 200px;
+  margin: 50px 0 0 0;
   
   img {
     width: 100%;
@@ -112,4 +119,19 @@ background-color: rgb(0, 0, 0, 0.6);
 
 const GroupButton = styled(AddButton)`
   background-color: black;
+`
+
+const SubTitle = styled.div`
+  color: rgb(249, 249, 249);
+  font-size: 15px;
+  min-height: 20px;
+  margin: 25px 0 0 0;
+`
+
+const Description = styled.div`
+  color: rgb(249, 249, 249);
+  line-height: 1.5;
+  font-size: 20px;
+  margin: 15px 0 0 0;
+  max-width: 700px;
 `
